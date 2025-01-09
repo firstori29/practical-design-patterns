@@ -1,14 +1,14 @@
-namespace BuilderPattern.Enums;
+namespace Builder.Enums;
 
 /// <summary>
-/// Represents the case type.
+/// Represents the plate type.
 /// </summary>
-public enum CaseType
+public enum PlateType
 {
     /// <summary>
-    /// Plastic.
+    /// Polycarbonate thermoplastic polymer.
     /// </summary>
-    Plastic,
+    PC,
 
     /// <summary>
     /// Metal.

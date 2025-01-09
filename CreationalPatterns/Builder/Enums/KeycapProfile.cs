@@ -1,4 +1,4 @@
-namespace BuilderPattern.Enums;
+namespace Builder.Enums;
 
 /// <summary>
 /// Represents the keycap profile.

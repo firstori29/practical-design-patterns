@@ -1,4 +1,4 @@
-namespace BuilderPattern.KeyboardParts;
+namespace Builder.KeyboardParts;
 
 /// <summary>
 /// Represents the stabilizer part of the keyboard.

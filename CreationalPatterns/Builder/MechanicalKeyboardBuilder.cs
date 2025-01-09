@@ -1,6 +1,5 @@
-namespace BuilderPattern;
+namespace Builder;
 
 public class MechanicalKeyboardBuilder
 {
-    
 }

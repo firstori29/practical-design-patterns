@@ -1,4 +1,4 @@
-namespace BuilderPattern;
+namespace Builder;
 
 /// <summary>
 /// Represents the mechanical keyboard class.

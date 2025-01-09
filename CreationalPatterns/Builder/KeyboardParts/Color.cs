@@ -1,4 +1,4 @@
-namespace BuilderPattern.KeyboardParts;
+namespace Builder.KeyboardParts;
 
 /// <summary>
 /// Represents the color part of the keyboard.

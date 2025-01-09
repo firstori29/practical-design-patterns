@@ -1,4 +1,4 @@
-namespace BuilderPattern.KeyboardParts;
+namespace Builder.KeyboardParts;
 
 /// <summary>
 /// Represents the led backlit part of the keyboard.

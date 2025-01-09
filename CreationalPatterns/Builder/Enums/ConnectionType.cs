@@ -1,4 +1,4 @@
-namespace BuilderPattern.Enums;
+namespace Builder.Enums;
 
 /// <summary>
 /// Represents the connection type.
@@ -14,7 +14,7 @@ public enum ConnectionType
     /// Wireless connection type like bluetooth.
     /// </summary>
     Wireless,
-    
+
     /// <summary>
     /// Supports both wire and wireless connection.
     /// </summary>
