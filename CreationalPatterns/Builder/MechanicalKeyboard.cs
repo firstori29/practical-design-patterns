@@ -3,107 +3,140 @@ namespace Builder;
 /// <summary>
 /// Represents the mechanical keyboard class.
 /// </summary>
-internal sealed class MechanicalKeyboard(
-    Case @case,
-    PCB pcb,
-    string color,
-    Plate plate,
-    Switch @switch,
-    Keycap keycap,
-    KeycapProfile keycapProfile,
-    Stabilizer stabilizer,
-    Led led,
-    ConnectionSupport connectionSupport,
-    Layout layout,
-    bool isHaveKnob)
+internal sealed class MechanicalKeyboard
 {
+    /// Initializes a new instance of <see cref="MechanicalKeyboard"/> class with properties parameter.
+    internal MechanicalKeyboard(MechanicalKeyboard mechanicalKeyboard)
+    {
+        Case = mechanicalKeyboard.Case;
+        PCB = mechanicalKeyboard.PCB;
+        Color = mechanicalKeyboard.Color;
+        Plate = mechanicalKeyboard.Plate;
+        Switch = mechanicalKeyboard.Switch;
+        Keycap = mechanicalKeyboard.Keycap;
+        KeycapProfile = mechanicalKeyboard.KeycapProfile;
+        Stabilizer = mechanicalKeyboard.Stabilizer;
+        Led = mechanicalKeyboard.Led;
+        ConnectionSupport = mechanicalKeyboard.ConnectionSupport;
+        Layout = mechanicalKeyboard.Layout;
+        IsHaveKnob = mechanicalKeyboard.IsHaveKnob;
+    }
+
+    /// <summary>
+    /// The default constructor.
+    /// </summary>
+    internal MechanicalKeyboard()
+    {
+    }
+
     /// <summary>
     /// The keyboard case.
     /// </summary>
-    public Case Case { get; set; } = @case;
+    internal Case? Case { get; set; }
 
     /// <summary>
     /// The keyboard PCB.
     /// </summary>
-    public PCB PCB { get; set; } = pcb;
+    internal PCB? PCB { get; set; }
 
     /// <summary>
     /// The keyboard color.
     /// </summary>
-    public string Color { get; set; } = color;
+    internal string? Color { get; set; }
 
     /// <summary>
     /// The keyboard plate.
     /// </summary>
-    public Plate Plate { get; set; } = plate;
+    internal Plate? Plate { get; set; }
 
     /// <summary>
     /// The keyboard switch.
     /// </summary>
-    public Switch Switch { get; set; } = @switch;
+    internal Switch? Switch { get; set; }
 
     /// <summary>
     /// The keyboard keycap.
     /// </summary>
-    public Keycap Keycap { get; set; } = keycap;
+    internal Keycap? Keycap { get; set; }
 
     /// <summary>
     /// The keyboard keycap profile.
     /// </summary>
-    public KeycapProfile KeycapProfile { get; set; } = keycapProfile;
+    internal KeycapProfile? KeycapProfile { get; set; }
 
     /// <summary>
     /// The keyboard stabilizer.
     /// </summary>
-    public Stabilizer Stabilizer { get; set; } = stabilizer;
+    internal Stabilizer? Stabilizer { get; set; }
 
     /// <summary>
     /// The keyboard led backlit.
     /// </summary>
-    public Led Led { get; set; } = led;
+    internal Led? Led { get; set; }
 
     /// <summary>
     /// The keyboard connection support.
     /// </summary>
-    public ConnectionSupport ConnectionSupport { get; set; } = connectionSupport;
+    internal ConnectionSupport? ConnectionSupport { get; set; }
 
     /// <summary>
     /// The keyboard layout.
     /// </summary>
-    public Layout Layout { get; set; } = layout;
+    internal Layout? Layout { get; set; }
 
     /// <summary>
-    /// The keyboard is have knob or not.
+    /// The keyboard is had knob or not.
     /// </summary>
-    public bool IsHaveKnob { get; set; } = isHaveKnob;
+    internal bool IsHaveKnob { get; set; }
 
+    /// <inheritdoc />
     public override string ToString()
+    {
+        return AssembledKeyboardComponentsReport();
+    }
+
+    /// <summary>
+    /// Print the mechanical keyboard assembled components.
+    /// </summary>
+    /// <returns>The string content of assembled mechanical keyboard components.</returns>
+    private string AssembledKeyboardComponentsReport()
     {
         var content = string.Empty;
 
-        content += $"Case material: {Case}\n";
+        if (Case is not null)
+            content += $"\t- Case material: {Case.Name} (Code: {Case.Code}).\n";
 
-        content += $"PCB material: {PCB}\n";
+        if (PCB is not null)
+            content += $"\t- PCB material: {PCB.Name} (Code: {PCB.Code}).\n";
 
-        content += $"Color: {Color}\n";
+        if (Color is not null)
+            content += $"\t- Color: {Color}.\n";
 
-        content += $"Plate material: {Plate}\n";
+        if (Plate is not null)
+            content += $"\t- Plate material: {Plate.Name} (Code: {Plate.Code}).\n";
 
-        content += $"Switch type: {Switch}\n";
+        if (Switch is not null)
+            content += $"\t- Switch type: {Switch.Name} (Code: {Switch.Code}).\n";
 
-        content += $"Keycap material: {Keycap}\n";
+        if (Keycap is not null)
+            content += $"\t- Keycap material: {Keycap.Name} (Code: {Keycap.Code}).\n";
 
-        content += $"Keycap profile: {KeycapProfile}\n";
+        if (KeycapProfile is not null)
+            content += $"\t- Keycap profile: {KeycapProfile.Name} (Code: {KeycapProfile.Code}).\n";
 
-        content += $"Stabilizer type: {Stabilizer}\n";
+        if (Stabilizer is not null)
+            content += $"\t- Stabilizer type: {Stabilizer.Name} (Code: {Stabilizer.Code}).\n";
 
-        content += $"Led type: {Led}\n";
+        if (Led is not null)
+            content += $"\t- LED type: {Led.Name} (Code: {Led.Code}).\n";
 
-        content += $"Connection support: {ConnectionSupport}\n";
+        if (ConnectionSupport is not null)
+            content += $"\t- Connection support: {ConnectionSupport.Name} (Code: {ConnectionSupport.Code}).\n";
 
-        content += $"Layout: {Layout}\n";
+        if (Layout is not null)
+            content += $"\t- Layout: {Layout.Name} (Code: {Layout.Code}).\n";
 
-        content += $"Knob support: {(IsHaveKnob ? "Yes" : "No")}\n";
+        content += $"\t- Knob support: {(IsHaveKnob ? "Yes." : "No.")}\n";
 
         return content;
     }

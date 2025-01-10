@@ -1,29 +1,20 @@
-﻿/*Mechanical keyboard parts
-    - Case
-    - PCB (Printed Circuit Board)
-    - Color
-    - Plate
-    - Switch
-    - Keycap
-    - Keycap profile
-    - Stabilizer
-    - Led
-    - Connection type
-    - Layout
-    - Knob
+﻿var builder = new MechanicalKeyboardBuilder();
 
-Mechanical keyboard property type:
-- Case: Enum: Plastic, Metal.
-- PCB: Enum: Hotswap, Solder.
-- Color: string.
-- Plate: Enum: PC (Polycarbonate), Metal.
-- Switch: Enum: Clicky, Linear, Tactile.
-- Keycap: Enum: Enum: Plastic.ABS, Enum: Plastic.PPT.
-- KeycapProfile: Enum: SA, OEM, Cherry, XDA, DSA.
-- Stabilizer: Enum: Cherry, Costar, Optical.
-- Led: Enum: Monochrome, RGB, Rainbow.
-- ConnectionType: Enum: Wire, Wireless.
-- Layout: Enum TKL: int, FullSize: int.
-- Knob: boolean (true, false).*/
+var director = new Director(builder);
 
-Console.Write("Hello World!");
+// Build mechanical keyboard with delegate to the director.
+Console.WriteLine("========== BUILDER PATTERN ==========\n");
+Console.WriteLine("Build STANDARD mechanical keyboard components:");
+director.BuildStandardMechanicalKeyboard();
+Console.WriteLine(builder.GetResult().ToString());
+
+Console.WriteLine("Build PREMIUM mechanical keyboard components: ");
+director.BuildPremiumMechanicalKeyboard();
+Console.WriteLine(builder.GetResult().ToString());
+
+// Customers directly direct mechanical keyboard processes
+Console.WriteLine("Build CUSTOM mechanical keyboard components: ");
+builder.SetCase(new Case("CSE192", "Recycled PC"));
+builder.SetLayout(new Layout("LAY315", "Ergonomics"));
+Console.WriteLine(builder.GetResult().ToString());
+Console.WriteLine("\t... and so on.");

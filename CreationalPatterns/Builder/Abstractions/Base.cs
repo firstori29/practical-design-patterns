@@ -1,9 +1,9 @@
-namespace Builder.KeyboardParts;
+namespace Builder.Abstractions;
 
 /// <summary>
 /// Represents the base part class of the keyboard.
 /// </summary>
-internal class Base
+internal abstract class Base
 {
     /// <summary>
     /// Initializes a new instance of the base class.
@@ -17,10 +17,10 @@ internal class Base
     /// <summary>
     /// The base part code of keyboard.
     /// </summary>
-    public string Code { get; set; }
+    internal string Code { get; private set; }
 
     /// <summary>
     /// The base part name of keyboard.
     /// </summary>
-    public string Name { get; set; }
+    internal string Name { get; private set; }
 }

@@ -3,15 +3,15 @@ namespace Builder.Enums;
 /// <summary>
 /// Represents the case type.
 /// </summary>
-public enum CaseType
+internal enum CaseType
 {
     /// <summary>
     /// Plastic.
     /// </summary>
-    Plastic,
+    [Description("Plastic")] Plastic,
 
     /// <summary>
     /// Metal.
     /// </summary>
-    Metal
+    [Description("Metal")] Metal
 }

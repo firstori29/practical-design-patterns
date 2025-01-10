@@ -1,32 +1,32 @@
 namespace Builder.Enums;
 
 /// <summary>
-/// Represents the keycap profile.
+/// Represents the keycap profile type.
 /// </summary>
-public enum KeycapProfile
+internal enum KeycapProfileType
 {
     /// <summary>
     /// The SA profile.
     /// </summary>
-    SA,
+    [Description("SA")] SA,
 
     /// <summary>
     /// The OEM profile.
     /// </summary>
-    OEM,
+    [Description("OEM")] OEM,
 
     /// <summary>
     /// The Cherry profile.
     /// </summary>
-    Cherry,
+    [Description("Cherry")] Cherry,
 
     /// <summary>
     /// The XDA profile.
     /// </summary>
-    XDA,
+    [Description("XDA")] XDA,
 
     /// <summary>
     /// The DSA profile.
     /// </summary>
-    DSA
+    [Description("DSA")] DSA
 }

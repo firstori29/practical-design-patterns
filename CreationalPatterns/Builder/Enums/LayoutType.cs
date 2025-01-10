@@ -3,25 +3,25 @@ namespace Builder.Enums;
 /// <summary>
 /// Represents the layout type.
 /// </summary>
-public enum LayoutType
+internal enum LayoutType
 {
     /// <summary>
     /// The sixty percent layout type.
     /// </summary>
-    Sixty = 60,
+    [Description("60%")] Sixty = 60,
 
     /// <summary>
     /// The seventy-five percent layout type.
     /// </summary>
-    SeventyFive = 75,
+    [Description("75%")] SeventyFive = 75,
 
     /// <summary>
     /// The Ten Key Less layout type.
     /// </summary>
-    TKL = 87,
+    [Description("87 keys")] TKL = 87,
 
     /// <summary>
     /// The full size layout type.
     /// </summary>
-    FullSize = 104
+    [Description("104 keys")] FullSize = 104
 }
