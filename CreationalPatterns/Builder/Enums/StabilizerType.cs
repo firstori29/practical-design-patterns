@@ -3,20 +3,20 @@ namespace Builder.Enums;
 /// <summary>
 /// Represents the stabilizer type.
 /// </summary>
-public enum StabilizerType
+internal enum StabilizerType
 {
     /// <summary>
     /// The Cherry stabilizer type.
     /// </summary>
-    Cherry,
+    [Description("Cherry")] Cherry,
 
     /// <summary>
     /// The Costar stabilizer type.
     /// </summary>
-    Costar,
+    [Description("Costar")] Costar,
 
     /// <summary>
     /// The Optical stabilizer type.
     /// </summary>
-    Optical
+    [Description("Optical")] Optical
 }

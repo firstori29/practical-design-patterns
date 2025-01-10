@@ -3,20 +3,20 @@ namespace Builder.Enums;
 /// <summary>
 /// Represents the led type.
 /// </summary>
-public enum LedType
+internal enum LedType
 {
     /// <summary>
     /// The Monochrome led type.
     /// </summary>
-    Monochrome,
+    [Description("Monochrome")] Monochrome,
 
     /// <summary>
-    /// The RGB led type.
+    /// The RGB LED type.
     /// </summary>
-    RGB,
+    [Description("RGB")] RGB,
 
     /// <summary>
     /// The Rainbow led type.
     /// </summary>
-    Rainbow
+    [Description("Rainbow")] Rainbow
 }

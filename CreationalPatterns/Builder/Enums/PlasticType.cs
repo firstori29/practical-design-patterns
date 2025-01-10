@@ -3,15 +3,15 @@ namespace Builder.Enums;
 /// <summary>
 /// Represents the plastic type.
 /// </summary>
-public enum PlasticType
+internal enum PlasticType
 {
     /// <summary>
-    /// Acrylonitrile Butadiene styrene thermoplastic polymer.
+    /// ABS thermoplastic polymer keycap.
     /// </summary>
-    ABS,
+    [Description("ABS")] ABS,
 
     /// <summary>
-    /// Polybutylene Terephthalate thermoplastic polymer.
+    /// PBT thermoplastic polymer keycap.
     /// </summary>
-    PBT
+    [Description("PBT")] PBT
 }

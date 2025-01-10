@@ -3,20 +3,20 @@ namespace Builder.Enums;
 /// <summary>
 /// Represents the switch type.
 /// </summary>
-public enum SwitchType
+internal enum SwitchType
 {
     /// <summary>
     /// Clicking sound.
     /// </summary>
-    Clicky,
+    [Description("Clicky")] Clicky,
 
     /// <summary>
     /// Quiet sound.
     /// </summary>
-    Linear,
+    [Description("Linear")] Linear,
 
     /// <summary>
     /// Average sound.
     /// </summary>
-    Tactile
+    [Description("Tactile")] Tactile
 }
