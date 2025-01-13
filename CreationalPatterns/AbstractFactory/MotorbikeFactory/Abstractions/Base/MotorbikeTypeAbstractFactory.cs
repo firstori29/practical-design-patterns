@@ -1,23 +1,23 @@
-namespace FactoryMethod.MotorbikeCreator.Base;
+namespace AbstractFactory.MotorbikeFactory.Abstractions.Base;
 
-/// <summary>
-/// Represents the motorbike creator.
-/// </summary>
-internal abstract class MotorbikeCreator
+internal abstract class MotorbikeTypeAbstractFactory
 {
     /// <summary>
     /// Initializes a new instance of the <see cref="Motorbike"/> class.
     /// </summary>
+    /// <param name="type">The motorbike type.</param>
     /// <returns>A new instance of the <see cref="Motorbike"/> class.</returns>
-    protected abstract Motorbike CreateMotorbike();
+    protected abstract Motorbike? CreateMotorbike(string type);
 
     /// <summary>
     /// The motorbike information.
     /// </summary>
     /// <returns>The motorbike information.</returns>
-    public void MotorbikeInformation()
+    public void MotorbikeInformation(string type)
     {
-        var motorbike = CreateMotorbike();
+        var motorbike = CreateMotorbike(type);
+
+        if (motorbike is null) return;
 
         motorbike.MotorBikeSpecs();
 

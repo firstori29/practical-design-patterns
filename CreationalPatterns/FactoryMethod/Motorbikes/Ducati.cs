@@ -31,7 +31,8 @@ internal sealed class Ducati(
     protected override float ConsumptionRate { get; } = consumptionRate;
     protected override bool AbsSupport { get; } = absSupport;
 
-    public override void PaymentMethod() => Console.WriteLine(Enums.PaymentMethod.DebitCard.GetDescription());
+    public override void PaymentMethod() =>
+        Console.WriteLine($"Payment Method: ${Enums.PaymentMethod.DebitCard.GetDescription()}");
 
     public override void ShippingMethod() => Console.WriteLine($"Shipping {Brand} {Name} by road.\n");
 }

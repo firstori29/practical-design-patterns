@@ -31,7 +31,8 @@ internal sealed class BMW(
     protected override float ConsumptionRate { get; } = consumptionRate;
     protected override bool AbsSupport { get; } = absSupport;
 
-    public override void PaymentMethod() => Console.WriteLine(Enums.PaymentMethod.InternetBanking.GetDescription());
+    public override void PaymentMethod() =>
+        Console.WriteLine($"Payment Method: {Enums.PaymentMethod.InternetBanking.GetDescription()}");
 
     public override void ShippingMethod() => Console.WriteLine($"Shipping {Brand} {Name} by road.");
 }

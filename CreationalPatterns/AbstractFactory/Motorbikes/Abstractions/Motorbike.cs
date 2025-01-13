@@ -1,4 +1,4 @@
-namespace FactoryMethod.Motorbikes.Base;
+namespace AbstractFactory.Motorbikes.Abstractions;
 
 /// <summary>
 /// Represents the abstract motorbike class.
