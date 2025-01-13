@@ -12,7 +12,7 @@ internal interface IMechanicalKeyboardBuilder
     /// <returns>
     /// A new instance of <see cref="MechanicalKeyboardBuilder"/> with assigned value for Case property.
     /// </returns>
-    internal MechanicalKeyboardBuilder SetCase(Case? @case);
+    internal IMechanicalKeyboardBuilder SetCase(Case? @case);
 
     /// <summary>
     /// Sets value for PCB property.
@@ -21,7 +21,7 @@ internal interface IMechanicalKeyboardBuilder
     /// <returns>
     /// A new instance of <see cref="MechanicalKeyboardBuilder"/> with assigned value for PCB property.
     /// </returns>
-    internal MechanicalKeyboardBuilder SetPCB(PCB? pcb);
+    internal IMechanicalKeyboardBuilder SetPCB(PCB? pcb);
 
     /// <summary>
     /// Sets value for Color property.
@@ -30,7 +30,7 @@ internal interface IMechanicalKeyboardBuilder
     /// <returns>
     /// A new instance of <see cref="MechanicalKeyboardBuilder"/> with assigned value for Color property.
     /// </returns>
-    internal MechanicalKeyboardBuilder SetColor(string? color);
+    internal IMechanicalKeyboardBuilder SetColor(string? color);
 
     /// <summary>
     /// Sets value for Plate property.
@@ -39,7 +39,7 @@ internal interface IMechanicalKeyboardBuilder
     /// <returns>
     /// A new instance of <see cref="MechanicalKeyboardBuilder"/> with assigned value for Plate property.
     /// </returns>
-    internal MechanicalKeyboardBuilder SetPlate(Plate? plate);
+    internal IMechanicalKeyboardBuilder SetPlate(Plate? plate);
 
     /// <summary>
     /// Sets value for Switch property.
@@ -48,7 +48,7 @@ internal interface IMechanicalKeyboardBuilder
     /// <returns>
     /// A new instance of <see cref="MechanicalKeyboardBuilder"/> with assigned value for Switch property.
     /// </returns>
-    internal MechanicalKeyboardBuilder SetSwitch(Switch? @switch);
+    internal IMechanicalKeyboardBuilder SetSwitch(Switch? @switch);
 
     /// <summary>
     /// Sets value for Keycap property.
@@ -57,7 +57,7 @@ internal interface IMechanicalKeyboardBuilder
     /// <returns>
     /// A new instance of <see cref="MechanicalKeyboardBuilder"/> with assigned value for Keycap property.
     /// </returns>
-    internal MechanicalKeyboardBuilder SetKeycap(Keycap? keycap);
+    internal IMechanicalKeyboardBuilder SetKeycap(Keycap? keycap);
 
     /// <summary>
     /// Sets value for KeycapProfile property.
@@ -66,7 +66,7 @@ internal interface IMechanicalKeyboardBuilder
     /// <returns>
     /// A new instance of <see cref="MechanicalKeyboardBuilder"/> with assigned value for KeycapProfile property.
     /// </returns>
-    internal MechanicalKeyboardBuilder SetKeycapProfile(KeycapProfile? keycapProfile);
+    internal IMechanicalKeyboardBuilder SetKeycapProfile(KeycapProfile? keycapProfile);
 
     /// <summary>
     /// Sets value for Stabilizer property.
@@ -75,7 +75,7 @@ internal interface IMechanicalKeyboardBuilder
     /// <returns>
     /// A new instance of <see cref="MechanicalKeyboardBuilder"/> with assigned value for Stabilizer property.
     /// </returns>
-    internal MechanicalKeyboardBuilder SetStabilizer(Stabilizer? stabilizer);
+    internal IMechanicalKeyboardBuilder SetStabilizer(Stabilizer? stabilizer);
 
     /// <summary>
     /// Sets value for Led property.
@@ -84,7 +84,7 @@ internal interface IMechanicalKeyboardBuilder
     /// <returns>
     /// A new instance of <see cref="MechanicalKeyboardBuilder"/> with assigned value for Led property.
     /// </returns>
-    internal MechanicalKeyboardBuilder SetLed(Led? led);
+    internal IMechanicalKeyboardBuilder SetLed(Led? led);
 
     /// <summary>
     /// Sets value for ConnectionSupport property.
@@ -93,7 +93,7 @@ internal interface IMechanicalKeyboardBuilder
     /// <returns>
     /// A new instance of <see cref="MechanicalKeyboardBuilder"/> with assigned value for ConnectionSupport property.
     /// </returns>
-    internal MechanicalKeyboardBuilder SetConnectionSupport(ConnectionSupport? connectionSupport);
+    internal IMechanicalKeyboardBuilder SetConnectionSupport(ConnectionSupport? connectionSupport);
 
     /// <summary>
     /// Sets value for Layout property.
@@ -102,7 +102,7 @@ internal interface IMechanicalKeyboardBuilder
     /// <returns>
     /// A new instance of <see cref="MechanicalKeyboardBuilder"/> with assigned value for Layout property.
     /// </returns>
-    internal MechanicalKeyboardBuilder SetLayout(Layout? layout);
+    internal IMechanicalKeyboardBuilder SetLayout(Layout? layout);
 
     /// <summary>
     /// Sets for IsHaveKnob property.
@@ -111,7 +111,7 @@ internal interface IMechanicalKeyboardBuilder
     /// <returns>
     /// A new instance of <see cref="MechanicalKeyboardBuilder"/> with assigned value for IsHaveKnob property.
     /// </returns>
-    internal MechanicalKeyboardBuilder SetIsHaveKnob(bool isHaveKnob);
+    internal void SetIsHaveKnob(bool isHaveKnob);
 
     /// <summary>
     /// Generate a random code with 6 digits of characters and numbers. 

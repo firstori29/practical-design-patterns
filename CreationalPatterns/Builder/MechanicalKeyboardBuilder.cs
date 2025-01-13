@@ -27,7 +27,7 @@ internal sealed class MechanicalKeyboardBuilder : IMechanicalKeyboardBuilder
     }
 
     /// <inheritdoc />
-    public MechanicalKeyboardBuilder SetCase(Case? @case)
+    public IMechanicalKeyboardBuilder SetCase(Case? @case)
     {
         _mechanicalKeyboard.Case = @case;
 
@@ -35,7 +35,7 @@ internal sealed class MechanicalKeyboardBuilder : IMechanicalKeyboardBuilder
     }
 
     /// <inheritdoc />
-    public MechanicalKeyboardBuilder SetPCB(PCB? pcb)
+    public IMechanicalKeyboardBuilder SetPCB(PCB? pcb)
     {
         _mechanicalKeyboard.PCB = pcb;
 
@@ -43,7 +43,7 @@ internal sealed class MechanicalKeyboardBuilder : IMechanicalKeyboardBuilder
     }
 
     /// <inheritdoc />
-    public MechanicalKeyboardBuilder SetColor(string? color)
+    public IMechanicalKeyboardBuilder SetColor(string? color)
     {
         _mechanicalKeyboard.Color = color;
 
@@ -51,7 +51,7 @@ internal sealed class MechanicalKeyboardBuilder : IMechanicalKeyboardBuilder
     }
 
     /// <inheritdoc />
-    public MechanicalKeyboardBuilder SetPlate(Plate? plate)
+    public IMechanicalKeyboardBuilder SetPlate(Plate? plate)
     {
         _mechanicalKeyboard.Plate = plate;
 
@@ -59,7 +59,7 @@ internal sealed class MechanicalKeyboardBuilder : IMechanicalKeyboardBuilder
     }
 
     /// <inheritdoc />
-    public MechanicalKeyboardBuilder SetSwitch(Switch? @switch)
+    public IMechanicalKeyboardBuilder SetSwitch(Switch? @switch)
     {
         _mechanicalKeyboard.Switch = @switch;
 
@@ -67,7 +67,7 @@ internal sealed class MechanicalKeyboardBuilder : IMechanicalKeyboardBuilder
     }
 
     /// <inheritdoc />
-    public MechanicalKeyboardBuilder SetKeycap(Keycap? keycap)
+    public IMechanicalKeyboardBuilder SetKeycap(Keycap? keycap)
     {
         _mechanicalKeyboard.Keycap = keycap;
 
@@ -75,7 +75,7 @@ internal sealed class MechanicalKeyboardBuilder : IMechanicalKeyboardBuilder
     }
 
     /// <inheritdoc />
-    public MechanicalKeyboardBuilder SetKeycapProfile(KeycapProfile? keycapProfile)
+    public IMechanicalKeyboardBuilder SetKeycapProfile(KeycapProfile? keycapProfile)
     {
         _mechanicalKeyboard.KeycapProfile = keycapProfile;
 
@@ -83,7 +83,7 @@ internal sealed class MechanicalKeyboardBuilder : IMechanicalKeyboardBuilder
     }
 
     /// <inheritdoc />
-    public MechanicalKeyboardBuilder SetStabilizer(Stabilizer? stabilizer)
+    public IMechanicalKeyboardBuilder SetStabilizer(Stabilizer? stabilizer)
     {
         _mechanicalKeyboard.Stabilizer = stabilizer;
 
@@ -91,7 +91,7 @@ internal sealed class MechanicalKeyboardBuilder : IMechanicalKeyboardBuilder
     }
 
     /// <inheritdoc />
-    public MechanicalKeyboardBuilder SetLed(Led? led)
+    public IMechanicalKeyboardBuilder SetLed(Led? led)
     {
         _mechanicalKeyboard.Led = led;
 
@@ -99,7 +99,7 @@ internal sealed class MechanicalKeyboardBuilder : IMechanicalKeyboardBuilder
     }
 
     /// <inheritdoc />
-    public MechanicalKeyboardBuilder SetConnectionSupport(ConnectionSupport? connectionSupport)
+    public IMechanicalKeyboardBuilder SetConnectionSupport(ConnectionSupport? connectionSupport)
     {
         _mechanicalKeyboard.ConnectionSupport = connectionSupport;
 
@@ -107,7 +107,7 @@ internal sealed class MechanicalKeyboardBuilder : IMechanicalKeyboardBuilder
     }
 
     /// <inheritdoc />
-    public MechanicalKeyboardBuilder SetLayout(Layout? layout)
+    public IMechanicalKeyboardBuilder SetLayout(Layout? layout)
     {
         _mechanicalKeyboard.Layout = layout;
 
@@ -115,11 +115,9 @@ internal sealed class MechanicalKeyboardBuilder : IMechanicalKeyboardBuilder
     }
 
     /// <inheritdoc />
-    public MechanicalKeyboardBuilder SetIsHaveKnob(bool isHaveKnob)
+    public void SetIsHaveKnob(bool isHaveKnob)
     {
         _mechanicalKeyboard.IsHaveKnob = isHaveKnob;
-
-        return this;
     }
 
     /// <inheritdoc />
