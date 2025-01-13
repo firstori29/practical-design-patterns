@@ -8,7 +8,7 @@ internal sealed class HarleyDavidsonCreator : Base.MotorbikeCreator
     protected override Motorbike CreateMotorbike()
     {
         return new HarleyDavidson(
-            "HD Fat Boy 114",
+            "HD basic",
             Brand.HarleyDavidson,
             1500,
             Color.Black,

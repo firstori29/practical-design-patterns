@@ -8,7 +8,7 @@ internal sealed class DucatiCreator : Base.MotorbikeCreator
     protected override Motorbike CreateMotorbike()
     {
         return new Ducati(
-            "Panigale V4s",
+            "Ducati basic",
             Brand.Ducati,
             999,
             Color.Red,

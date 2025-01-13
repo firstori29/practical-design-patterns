@@ -8,7 +8,7 @@ internal sealed class BMWCreator : Base.MotorbikeCreator
     protected override Motorbike CreateMotorbike()
     {
         return new BMW(
-            "GS 1250",
+            "BMW basic",
             Brand.BMW,
             1200,
             Color.Gray,

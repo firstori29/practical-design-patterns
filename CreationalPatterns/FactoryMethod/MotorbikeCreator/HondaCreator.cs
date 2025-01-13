@@ -8,7 +8,7 @@ internal sealed class HondaCreator : Base.MotorbikeCreator
     protected override Motorbike CreateMotorbike()
     {
         return new Honda(
-            "CB1000RR-R FireBlade",
+            "Honda basic",
             Brand.Honda,
             1000,
             Color.Red,

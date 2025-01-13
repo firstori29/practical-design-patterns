@@ -8,7 +8,7 @@ internal sealed class YamahaCreator : Base.MotorbikeCreator
     protected override Motorbike CreateMotorbike()
     {
         return new Yamaha(
-            "XSR900",
+            "Yamaha basic",
             Brand.Yamaha,
             890,
             Color.Blue,
