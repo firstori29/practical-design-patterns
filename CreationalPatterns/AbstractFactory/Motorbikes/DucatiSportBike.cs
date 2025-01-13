@@ -1,7 +1,7 @@
-namespace FactoryMethod.Motorbikes;
+namespace AbstractFactory.Motorbikes;
 
 /// <summary>
-/// The Honda motorbike class.
+/// Represents the Ducati sport bike class.
 /// </summary>
 /// <param name="name">The motorbike name.</param>
 /// <param name="brand">The motorbike brand.</param>
@@ -11,7 +11,7 @@ namespace FactoryMethod.Motorbikes;
 /// <param name="fuelTankCapacity">The motorbike fuel tank capacity.</param>
 /// <param name="consumptionRate">The motorbike consumption rate.</param>
 /// <param name="absSupport">The motorbike ABS support.</param>
-internal sealed class Honda(
+internal sealed class DucatiSportBike(
     string name,
     Brand brand,
     int displacement,

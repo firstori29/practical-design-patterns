@@ -1,33 +1,14 @@
-﻿var brand = nameof(HarleyDavidson);
+﻿MotorbikeCreator yamahaCreator = new YamahaCreator();
+yamahaCreator.MotorbikeInformation();
 
-MotorbikeCreator? creator;
+MotorbikeCreator bmwCreator = new BMWCreator();
+bmwCreator.MotorbikeInformation();
 
-switch (brand)
-{
-    case nameof(Yamaha):
-        creator = new YamahaCreator();
-        break;
+MotorbikeCreator hondaCreator = new HondaCreator();
+hondaCreator.MotorbikeInformation();
 
-    case nameof(BMW):
-        creator = new BMWCreator();
-        break;
+MotorbikeCreator ducatiCreator = new DucatiCreator();
+ducatiCreator.MotorbikeInformation();
 
-    case nameof(Honda):
-        creator = new HondaCreator();
-        break;
-
-    case nameof(Ducati):
-        creator = new DucatiCreator();
-        break;
-
-    case nameof(HarleyDavidson):
-        creator = new HarleyDavidsonCreator();
-        break;
-
-    default:
-        creator = null;
-        Console.WriteLine($"Unknown motorbike brand: {brand}.");
-        break;
-}
-
-creator?.MotorbikeInvoice();
+MotorbikeCreator harleyDavidsonCreator = new HarleyDavidsonCreator();
+harleyDavidsonCreator.MotorbikeInformation();

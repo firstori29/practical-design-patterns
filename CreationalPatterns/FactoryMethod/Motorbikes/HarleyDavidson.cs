@@ -31,7 +31,8 @@ internal sealed class HarleyDavidson(
     protected override float ConsumptionRate { get; } = consumptionRate;
     protected override bool AbsSupport { get; } = absSupport;
 
-    public override void PaymentMethod() => Console.WriteLine(Enums.PaymentMethod.CreditCard.GetDescription());
+    public override void PaymentMethod() =>
+        Console.WriteLine($"Payment Method: {Enums.PaymentMethod.CreditCard.GetDescription()}");
 
     public override void ShippingMethod() => Console.WriteLine($"Shipping {Brand} {Name} by air plane.\n");
 }

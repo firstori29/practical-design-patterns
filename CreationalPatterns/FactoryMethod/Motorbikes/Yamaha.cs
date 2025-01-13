@@ -31,5 +31,6 @@ internal sealed class Yamaha(
     protected override float ConsumptionRate { get; } = consumptionRate;
     protected override bool AbsSupport { get; } = absSupport;
 
-    public override void PaymentMethod() => Console.WriteLine(Enums.PaymentMethod.Cash.GetDescription());
+    public override void PaymentMethod() =>
+        Console.WriteLine($"Payment Method: {Enums.PaymentMethod.Cash.GetDescription()}");
 }
