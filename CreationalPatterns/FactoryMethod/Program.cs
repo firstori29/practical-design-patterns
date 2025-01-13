@@ -1,14 +1,14 @@
-﻿MotorbikeCreator yamahaCreator = new YamahaCreator();
-yamahaCreator.MotorbikeInformation();
+﻿MotorbikeFactory yamahaFactory = new YamahaFactory();
+yamahaFactory.MotorbikeInformation();
 
-MotorbikeCreator bmwCreator = new BMWCreator();
-bmwCreator.MotorbikeInformation();
+MotorbikeFactory bmwFactory = new BMWFactory();
+bmwFactory.MotorbikeInformation();
 
-MotorbikeCreator hondaCreator = new HondaCreator();
-hondaCreator.MotorbikeInformation();
+MotorbikeFactory hondaFactory = new HondaFactory();
+hondaFactory.MotorbikeInformation();
 
-MotorbikeCreator ducatiCreator = new DucatiCreator();
-ducatiCreator.MotorbikeInformation();
+MotorbikeFactory ducatiFactory = new DucatiFactory();
+ducatiFactory.MotorbikeInformation();
 
-MotorbikeCreator harleyDavidsonCreator = new HarleyDavidsonCreator();
-harleyDavidsonCreator.MotorbikeInformation();
+MotorbikeFactory harleyDavidsonFactory = new HarleyDavidsonFactory();
+harleyDavidsonFactory.MotorbikeInformation();

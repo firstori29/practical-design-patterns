@@ -4,8 +4,8 @@ global using FactoryMethod.Enums;
 
 global using FactoryMethod.Extensions;
 
-global using FactoryMethod.MotorbikeCreator;
-global using FactoryMethod.MotorbikeCreator.Base;
+global using FactoryMethod.MotorbikeFactories;
+global using FactoryMethod.MotorbikeFactories.Base;
 
 global using FactoryMethod.Motorbikes;
 global using FactoryMethod.Motorbikes.Base;

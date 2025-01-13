@@ -1,9 +1,9 @@
-namespace FactoryMethod.MotorbikeCreator;
+namespace FactoryMethod.MotorbikeFactories;
 
 /// <summary>
-/// Represents the BMW motorbike creator.
+/// Represents the BMW motorbike factory.
 /// </summary>
-internal sealed class BMWCreator : Base.MotorbikeCreator
+internal sealed class BMWFactory : MotorbikeFactory
 {
     protected override Motorbike CreateMotorbike()
     {

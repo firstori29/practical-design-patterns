@@ -1,9 +1,9 @@
-namespace AbstractFactory.MotorbikeFactory.Abstractions;
+namespace AbstractFactory.MotorbikeFactories.Abstractions;
 
 /// <summary>
-/// Represents class motorbike creator.
+/// Represents class motorbike factory.
 /// </summary>
-internal sealed class SportBikeCreator : MotorbikeTypeAbstractFactory
+internal sealed class SportBikeFactory : MotorbikeTypeAbstractFactory
 {
     protected override Motorbike? CreateMotorbike(string type)
     {

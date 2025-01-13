@@ -1,5 +1,8 @@
-namespace AbstractFactory.MotorbikeFactory.Abstractions.Base;
+namespace AbstractFactory.MotorbikeFactories.Abstractions.Base;
 
+/// <summary>
+/// Represents the motorbike type abstract factory.
+/// </summary>
 internal abstract class MotorbikeTypeAbstractFactory
 {
     /// <summary>

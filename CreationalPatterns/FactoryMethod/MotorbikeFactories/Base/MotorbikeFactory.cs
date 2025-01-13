@@ -1,9 +1,9 @@
-namespace FactoryMethod.MotorbikeCreator.Base;
+namespace FactoryMethod.MotorbikeFactories.Base;
 
 /// <summary>
-/// Represents the motorbike creator.
+/// Represents the motorbike factory.
 /// </summary>
-internal abstract class MotorbikeCreator
+internal abstract class MotorbikeFactory
 {
     /// <summary>
     /// Initializes a new instance of the <see cref="Motorbike"/> class.
