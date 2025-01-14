@@ -1,6 +1,8 @@
 # Practical Design Patterns
 
-The project helps me gain practical experience in solving design challenges and applying design patterns in real-world applications. It enables me to create flexible, scalable, and maintainable software systems while improving my ability to structure code and make better architectural decisions.
+The project helps me gain practical experience in solving design challenges and applying design patterns in real-world
+applications. It enables me to create flexible, scalable, and maintainable software systems while improving my ability
+to structure code and make better architectural decisions.
 
 ## Plan
 

@@ -1,7 +1,7 @@
 ﻿MotorbikeFactory yamahaFactory = new YamahaFactory();
 yamahaFactory.MotorbikeInformation();
 
-MotorbikeFactory bmwFactory = new BMWFactory();
+MotorbikeFactory bmwFactory = new BmwFactory();
 bmwFactory.MotorbikeInformation();
 
 MotorbikeFactory hondaFactory = new HondaFactory();

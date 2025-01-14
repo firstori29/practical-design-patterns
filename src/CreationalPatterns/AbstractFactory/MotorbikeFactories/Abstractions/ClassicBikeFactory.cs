@@ -9,8 +9,8 @@ internal sealed class ClassicBikeFactory : MotorbikeTypeAbstractFactory
     {
         switch (type)
         {
-            case nameof(BMWClassicBike):
-                return new BMWClassicBike(
+            case nameof(BmwClassicBike):
+                return new BmwClassicBike(
                     "R18 Classic",
                     Brand.BMW,
                     900,

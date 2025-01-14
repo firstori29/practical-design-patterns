@@ -35,7 +35,7 @@ internal sealed class MechanicalKeyboardBuilder : IMechanicalKeyboardBuilder
     }
 
     /// <inheritdoc />
-    public IMechanicalKeyboardBuilder SetPCB(PCB? pcb)
+    public IMechanicalKeyboardBuilder SetPCB(Pcb? pcb)
     {
         _mechanicalKeyboard.PCB = pcb;
 

@@ -1,5 +1,5 @@
 ﻿MotorbikeTypeAbstractFactory classicBikeCreator = new ClassicBikeFactory();
-classicBikeCreator.MotorbikeInformation(nameof(BMWClassicBike));
+classicBikeCreator.MotorbikeInformation(nameof(BmwClassicBike));
 
 MotorbikeTypeAbstractFactory sportBikeCreator = new SportBikeFactory();
 sportBikeCreator.MotorbikeInformation(nameof(DucatiSportBike));

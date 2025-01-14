@@ -21,7 +21,7 @@ internal interface IMechanicalKeyboardBuilder
     /// <returns>
     /// A new instance of <see cref="MechanicalKeyboardBuilder"/> with assigned value for PCB property.
     /// </returns>
-    internal IMechanicalKeyboardBuilder SetPCB(PCB? pcb);
+    internal IMechanicalKeyboardBuilder SetPCB(Pcb? pcb);
 
     /// <summary>
     /// Sets value for Color property.

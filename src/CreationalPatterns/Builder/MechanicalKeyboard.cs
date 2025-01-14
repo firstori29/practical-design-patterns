@@ -35,7 +35,7 @@ internal sealed class MechanicalKeyboard
     /// <summary>
     /// The keyboard PCB.
     /// </summary>
-    internal PCB? PCB { get; set; }
+    internal Pcb? PCB { get; set; }
 
     /// <summary>
     /// The keyboard color.

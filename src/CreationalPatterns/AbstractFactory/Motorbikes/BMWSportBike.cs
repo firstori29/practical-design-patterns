@@ -11,7 +11,7 @@ namespace AbstractFactory.Motorbikes;
 /// <param name="fuelTankCapacity">The motorbike fuel tank capacity.</param>
 /// <param name="consumptionRate">The motorbike consumption rate.</param>
 /// <param name="absSupport">The motorbike ABS support.</param>
-internal sealed class BMWSportBike(string name,
+internal sealed class BmwSportBike(string name,
                                    Brand brand,
                                    int displacement,
                                    Color color,

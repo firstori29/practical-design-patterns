@@ -16,7 +16,7 @@
   <PropertyGroup>
     <CodeAnalysisTreatWarningsAsErrors>false</CodeAnalysisTreatWarningsAsErrors>
     <AnalysisLevel>latest</AnalysisLevel>
-    <AnalysisMode>All</AnalysisMode>
+    <AnalysisMode>Recommended</AnalysisMode>
   </PropertyGroup>
 
   <ItemGroup>

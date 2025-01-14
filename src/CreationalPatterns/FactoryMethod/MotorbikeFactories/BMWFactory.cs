@@ -3,11 +3,11 @@ namespace FactoryMethod.MotorbikeFactories;
 /// <summary>
 /// Represents the BMW motorbike factory.
 /// </summary>
-internal sealed class BMWFactory : MotorbikeFactory
+internal sealed class BmwFactory : MotorbikeFactory
 {
     protected override Motorbike CreateMotorbike()
     {
-        return new BMW(
+        return new Bmw(
             "BMW basic",
             Brand.BMW,
             1200,

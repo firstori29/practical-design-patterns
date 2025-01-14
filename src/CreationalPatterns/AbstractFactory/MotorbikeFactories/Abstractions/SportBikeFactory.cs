@@ -9,8 +9,8 @@ internal sealed class SportBikeFactory : MotorbikeTypeAbstractFactory
     {
         switch (type)
         {
-            case nameof(BMWSportBike):
-                return new BMWSportBike(
+            case nameof(BmwSportBike):
+                return new BmwSportBike(
                     "S1000RR",
                     Brand.BMW,
                     1100,
