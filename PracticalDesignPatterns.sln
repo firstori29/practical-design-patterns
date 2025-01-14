@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "solution items", "solution items", "{B9EB5035-F30B-4DDF-A2D2-D42335E3424B}"
+	ProjectSection(SolutionItems) = preProject
+		Directory.Build.props = Directory.Build.props
+		Directory.Packages.props = Directory.Packages.props
+		nuget.config = nuget.config
+		README.md = README.md
+		global.json = global.json
+		.editorconfig = .editorconfig
+		stylecop.json = stylecop.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{6A434B6F-9EE9-4CEC-BCFE-C6DF181454F1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbstractFactory", "src\CreationalPatterns\AbstractFactory\AbstractFactory.csproj", "{C2EFFA46-1CFD-4010-B85C-480426FDF5B2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CreationalPatterns", "CreationalPatterns", "{330242BF-33A4-48C6-AAFA-E05C7645271F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Builder", "src\CreationalPatterns\Builder\Builder.csproj", "{5AEBCFB0-811D-4CEF-A321-7C7D95A5A784}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactoryMethod", "src\CreationalPatterns\FactoryMethod\FactoryMethod.csproj", "{F693BDA9-7D8E-4CA9-A2DA-CE8AD2C95F6B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{0F56BCCC-ABAE-4395-88DC-B2C64FA251E8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C2EFFA46-1CFD-4010-B85C-480426FDF5B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2EFFA46-1CFD-4010-B85C-480426FDF5B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2EFFA46-1CFD-4010-B85C-480426FDF5B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2EFFA46-1CFD-4010-B85C-480426FDF5B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5AEBCFB0-811D-4CEF-A321-7C7D95A5A784}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AEBCFB0-811D-4CEF-A321-7C7D95A5A784}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AEBCFB0-811D-4CEF-A321-7C7D95A5A784}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AEBCFB0-811D-4CEF-A321-7C7D95A5A784}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F693BDA9-7D8E-4CA9-A2DA-CE8AD2C95F6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F693BDA9-7D8E-4CA9-A2DA-CE8AD2C95F6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F693BDA9-7D8E-4CA9-A2DA-CE8AD2C95F6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F693BDA9-7D8E-4CA9-A2DA-CE8AD2C95F6B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{330242BF-33A4-48C6-AAFA-E05C7645271F} = {6A434B6F-9EE9-4CEC-BCFE-C6DF181454F1}
+		{C2EFFA46-1CFD-4010-B85C-480426FDF5B2} = {330242BF-33A4-48C6-AAFA-E05C7645271F}
+		{5AEBCFB0-811D-4CEF-A321-7C7D95A5A784} = {330242BF-33A4-48C6-AAFA-E05C7645271F}
+		{F693BDA9-7D8E-4CA9-A2DA-CE8AD2C95F6B} = {330242BF-33A4-48C6-AAFA-E05C7645271F}
+	EndGlobalSection
+EndGlobal
