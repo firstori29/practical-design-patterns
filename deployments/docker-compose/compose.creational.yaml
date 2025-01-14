@@ -1,0 +1,21 @@
+﻿name: creational-patterns
+
+x-common-variables: &common-variables
+  DOTNET_ENVIRONMENT: Development
+
+services:
+  abstract-factory:
+    image: design-pattern/abstract-factory:${TAG}
+    container_name: abstract-factory
+    build:
+      context: ../../
+      dockerfile: src/CreationalPatterns/AbstractFactory/Dockerfile
+    networks:
+      - design-pattern-network
+    environment:
+      <<: *common-variables
+    restart: on-failure
+
+networks:
+  design-pattern-network:
+    driver: bridge
