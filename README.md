@@ -50,4 +50,4 @@ The application is in development status. You are feel free to submit pull reque
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=firstori29/Practical.DesignPatterns&type=Date)](https://star-history.com/#firstori29/Practical.DesignPatterns&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=firstori29/practical-design-patterns&type=Date)](https://star-history.com/#firstori29/practical-design-patterns&Date)
