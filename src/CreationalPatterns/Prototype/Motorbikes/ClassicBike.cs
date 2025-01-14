@@ -3,13 +3,26 @@ namespace Prototype.Motorbikes;
 /// <summary>
 /// Represents the classic bike subclass.
 /// </summary>
-/// <param name="classicBike">The <see cref="ClassicBike"/> object.</param>
-internal sealed class ClassicBike(ClassicBike classicBike) : Motorbike(classicBike)
+internal sealed class ClassicBike : Motorbike
 {
+    /// <summary>
+    /// Initializes a new instance of the <see cref="ClassicBike"/> class.
+    /// </summary>
+    internal ClassicBike() { }
+
+    /// <summary>
+    /// Initializes a new instance of the <see cref="ClassicBike"/> class with it type as argument.
+    /// </summary>
+    /// <param name="classicBike">The classic bike.</param>
+    internal ClassicBike(ClassicBike classicBike) : base(classicBike)
+    {
+        HeadlightType = classicBike.HeadlightType;
+    }
+
     /// <summary>
     /// The headlight type.
     /// </summary>
-    public string? HeadlightType { get; set; } = classicBike.HeadlightType;
+    internal string? HeadlightType { get; set; }
 
     /// <inheritdoc />
     internal override Motorbike Clone()

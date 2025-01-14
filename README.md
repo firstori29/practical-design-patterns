@@ -32,7 +32,7 @@ High-level plan is represented in the table
 | **Creational** | Abstract Factory        | Completed   |  
 |                | Builder                 | Completed   |  
 |                | Factory Method          | Completed   |  
-|                | Prototype               | In Progress |  
+|                | Prototype               | Completed   |  
 |                | Singleton               | In Progress |  
 | **Structural** | Adapter                 | Planned     |  
 |                | Bridge                  | Planned     |  
