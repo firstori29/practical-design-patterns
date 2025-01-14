@@ -12,6 +12,7 @@ the [Issues](https://github.com/firstori29/Practical.DesignPatterns/issues)
 section of this repository.
 
 High-level plan is represented in the table
+<div align="center">
 
 | **Category**   | **Pattern**             | **Status**  |  
 |----------------|-------------------------|-------------|  
@@ -39,6 +40,7 @@ High-level plan is represented in the table
 |                | Flyweight               | Planned     |  
 |                | Proxy                   | Planned     |  
 
+</div>
 
 ## Contribution
 
