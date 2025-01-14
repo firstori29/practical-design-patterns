@@ -9,6 +9,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "solution items", "solution 
 		global.json = global.json
 		.editorconfig = .editorconfig
 		stylecop.json = stylecop.json
+		compose.yaml = compose.yaml
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{6A434B6F-9EE9-4CEC-BCFE-C6DF181454F1}"
@@ -22,6 +23,14 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactoryMethod", "src\CreationalPatterns\FactoryMethod\FactoryMethod.csproj", "{F693BDA9-7D8E-4CA9-A2DA-CE8AD2C95F6B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{0F56BCCC-ABAE-4395-88DC-B2C64FA251E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "deployments", "deployments", "{2CFB7D4F-F892-4818-A03F-8757DB1EDFAD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docker-compose", "docker-compose", "{EB2E3868-3283-41F4-BF69-95EB0BF80629}"
+	ProjectSection(SolutionItems) = preProject
+		deployments\docker-compose\.env = deployments\docker-compose\.env
+		deployments\docker-compose\compose.creational.yaml = deployments\docker-compose\compose.creational.yaml
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,5 +56,6 @@ Global
 		{C2EFFA46-1CFD-4010-B85C-480426FDF5B2} = {330242BF-33A4-48C6-AAFA-E05C7645271F}
 		{5AEBCFB0-811D-4CEF-A321-7C7D95A5A784} = {330242BF-33A4-48C6-AAFA-E05C7645271F}
 		{F693BDA9-7D8E-4CA9-A2DA-CE8AD2C95F6B} = {330242BF-33A4-48C6-AAFA-E05C7645271F}
+		{EB2E3868-3283-41F4-BF69-95EB0BF80629} = {2CFB7D4F-F892-4818-A03F-8757DB1EDFAD}
 	EndGlobalSection
 EndGlobal

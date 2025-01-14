@@ -1,0 +1,25 @@
+﻿FROM mcr.microsoft.com/dotnet/runtime:9.0 AS base
+USER $APP_UID
+WORKDIR /app
+
+FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
+ARG BUILD_CONFIGURATION=Release
+WORKDIR /src
+
+COPY ["Directory.Packages.props", "./"]
+COPY ["Directory.Build.props", "./"]
+
+COPY ["src/CreationalPatterns/Builder/Builder.csproj", "src/CreationalPatterns/Builder/"]
+RUN dotnet restore "src/CreationalPatterns/Builder/Builder.csproj"
+COPY . .
+WORKDIR "/src/src/CreationalPatterns/Builder"
+RUN dotnet build "Builder.csproj" -c $BUILD_CONFIGURATION -o /app/build
+
+FROM build AS publish
+ARG BUILD_CONFIGURATION=Release
+RUN dotnet publish "Builder.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
+
+FROM base AS final
+WORKDIR /app
+COPY --from=publish /app/publish .
+ENTRYPOINT ["dotnet", "Builder.dll"]
