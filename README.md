@@ -16,31 +16,31 @@ section of this repository.
 High-level plan is represented in the table
 <div align="center">
 
-| **Category**   | **Pattern**             | **Status**  |  
-|----------------|-------------------------|-------------|  
-| **Behavioral** | Chain of Responsibility | Planned     |  
-|                | Command                 | Planned     |  
-|                | Interpreter             | Planned     |  
-|                | Iterator                | Planned     |  
-|                | Mediator                | Planned     |  
-|                | Memento                 | Planned     |  
-|                | Observer                | Planned     |  
-|                | State                   | Planned     |  
-|                | Strategy                | Planned     |  
-|                | Template Method         | Planned     |  
-|                | Visitor                 | Planned     |  
-| **Creational** | Abstract Factory        | Completed   |  
-|                | Builder                 | Completed   |  
-|                | Factory Method          | Completed   |  
-|                | Prototype               | Completed   |  
-|                | Singleton               | In Progress |  
-| **Structural** | Adapter                 | Planned     |  
-|                | Bridge                  | Planned     |  
-|                | Composite               | Planned     |  
-|                | Decorator               | Planned     |  
-|                | Facade                  | Planned     |  
-|                | Flyweight               | Planned     |  
-|                | Proxy                   | Planned     |  
+| **Category**   | **Pattern**             | **Status** |  
+|----------------|-------------------------|------------|  
+| **Behavioral** | Chain of Responsibility | Planned    |  
+|                | Command                 | Planned    |  
+|                | Interpreter             | Planned    |  
+|                | Iterator                | Planned    |  
+|                | Mediator                | Planned    |  
+|                | Memento                 | Planned    |  
+|                | Observer                | Planned    |  
+|                | State                   | Planned    |  
+|                | Strategy                | Planned    |  
+|                | Template Method         | Planned    |  
+|                | Visitor                 | Planned    |  
+| **Creational** | Abstract Factory        | Completed  |  
+|                | Builder                 | Completed  |  
+|                | Factory Method          | Completed  |  
+|                | Prototype               | Completed  |  
+|                | Singleton               | Completed  |  
+| **Structural** | Adapter                 | Planned    |  
+|                | Bridge                  | Planned    |  
+|                | Composite               | Planned    |  
+|                | Decorator               | Planned    |  
+|                | Facade                  | Planned    |  
+|                | Flyweight               | Planned    |  
+|                | Proxy                   | Planned    |  
 
 </div>
 
