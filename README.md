@@ -22,7 +22,7 @@ High-level plan is represented in the table
 |                | Command                 | Planned    |  
 |                | Interpreter             | Planned    |  
 |                | Iterator                | Planned    |  
-|                | Mediator                | Planned    |  
+|                | Mediator                | Completed  |  
 |                | Memento                 | Planned    |  
 |                | Observer                | Planned    |  
 |                | State                   | Planned    |  
