@@ -51,7 +51,7 @@ This avoids confusion and ensures safe landings — exactly what the Mediator Pa
 
 ## 🖥️ Output Example
 
-![ScreenshotatApr06083801.png](assets/Screenshot at Apr 06 08-38-01.png)
+![Output Example](https://raw.githubusercontent.com/firstori29/practical-design-patterns/main/src/BehavioralPatterns/Mediator/assets/output-example.png)
 
 ## 📂 How to Run
 
